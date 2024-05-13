@@ -1,0 +1,365 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Google.Protobuf/3.26.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "protobuf/2.6.1.1": {
+        "type": "package"
+      },
+      "protobuf-net/3.2.30": {
+        "type": "package",
+        "dependencies": {
+          "protobuf-net.Core": "3.2.30"
+        },
+        "compile": {
+          "lib/net6.0/protobuf-net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/protobuf-net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "protobuf-net.Core/3.2.30": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/protobuf-net.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/protobuf-net.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Collections.Immutable/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Google.Protobuf/3.26.1": {
+      "sha512": "CHZX8zXqhF/fdUtd+AYzew8T2HFkAoe5c7lbGxZY/qryAlQXckDvM5BfOJjXlMS7kyICqQTMszj4w1bX5uBJ/w==",
+      "type": "package",
+      "path": "google.protobuf/3.26.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.26.1.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "protobuf/2.6.1.1": {
+      "sha512": "4nR8C+GWm3paVn9MczwpqxB3BcvTjqQv8QCxnrGRPh4S3Vnv/SdtVm2JzebUgxDbawIpPbUzrGOmxggh06pP2g==",
+      "type": "package",
+      "path": "protobuf/2.6.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/configurations.autopkg",
+        "build/native/default-propertiesui.xml",
+        "build/native/include/google/protobuf/compiler/code_generator.h",
+        "build/native/include/google/protobuf/compiler/command_line_interface.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_enum.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_enum_field.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_extension.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_field.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_file.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_generator.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_helpers.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_message.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_message_field.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_options.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_primitive_field.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_service.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_string_field.h",
+        "build/native/include/google/protobuf/compiler/cpp/cpp_unittest.h",
+        "build/native/include/google/protobuf/compiler/importer.h",
+        "build/native/include/google/protobuf/compiler/java/java_context.h",
+        "build/native/include/google/protobuf/compiler/java/java_doc_comment.h",
+        "build/native/include/google/protobuf/compiler/java/java_enum.h",
+        "build/native/include/google/protobuf/compiler/java/java_enum_field.h",
+        "build/native/include/google/protobuf/compiler/java/java_extension.h",
+        "build/native/include/google/protobuf/compiler/java/java_field.h",
+        "build/native/include/google/protobuf/compiler/java/java_file.h",
+        "build/native/include/google/protobuf/compiler/java/java_generator.h",
+        "build/native/include/google/protobuf/compiler/java/java_generator_factory.h",
+        "build/native/include/google/protobuf/compiler/java/java_helpers.h",
+        "build/native/include/google/protobuf/compiler/java/java_lazy_message_field.h",
+        "build/native/include/google/protobuf/compiler/java/java_message.h",
+        "build/native/include/google/protobuf/compiler/java/java_message_field.h",
+        "build/native/include/google/protobuf/compiler/java/java_name_resolver.h",
+        "build/native/include/google/protobuf/compiler/java/java_primitive_field.h",
+        "build/native/include/google/protobuf/compiler/java/java_service.h",
+        "build/native/include/google/protobuf/compiler/java/java_shared_code_generator.h",
+        "build/native/include/google/protobuf/compiler/java/java_string_field.h",
+        "build/native/include/google/protobuf/compiler/mock_code_generator.h",
+        "build/native/include/google/protobuf/compiler/package_info.h",
+        "build/native/include/google/protobuf/compiler/parser.h",
+        "build/native/include/google/protobuf/compiler/plugin.h",
+        "build/native/include/google/protobuf/compiler/plugin.pb.h",
+        "build/native/include/google/protobuf/compiler/python/python_generator.h",
+        "build/native/include/google/protobuf/compiler/subprocess.h",
+        "build/native/include/google/protobuf/compiler/zip_writer.h",
+        "build/native/include/google/protobuf/descriptor.h",
+        "build/native/include/google/protobuf/descriptor.pb.h",
+        "build/native/include/google/protobuf/descriptor_database.h",
+        "build/native/include/google/protobuf/dynamic_message.h",
+        "build/native/include/google/protobuf/extension_set.h",
+        "build/native/include/google/protobuf/generated_enum_reflection.h",
+        "build/native/include/google/protobuf/generated_message_reflection.h",
+        "build/native/include/google/protobuf/generated_message_util.h",
+        "build/native/include/google/protobuf/io/coded_stream.h",
+        "build/native/include/google/protobuf/io/coded_stream_inl.h",
+        "build/native/include/google/protobuf/io/gzip_stream.h",
+        "build/native/include/google/protobuf/io/package_info.h",
+        "build/native/include/google/protobuf/io/printer.h",
+        "build/native/include/google/protobuf/io/strtod.h",
+        "build/native/include/google/protobuf/io/tokenizer.h",
+        "build/native/include/google/protobuf/io/zero_copy_stream.h",
+        "build/native/include/google/protobuf/io/zero_copy_stream_impl.h",
+        "build/native/include/google/protobuf/io/zero_copy_stream_impl_lite.h",
+        "build/native/include/google/protobuf/message.h",
+        "build/native/include/google/protobuf/message_lite.h",
+        "build/native/include/google/protobuf/package_info.h",
+        "build/native/include/google/protobuf/reflection_ops.h",
+        "build/native/include/google/protobuf/repeated_field.h",
+        "build/native/include/google/protobuf/service.h",
+        "build/native/include/google/protobuf/stubs/atomicops.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_arm64_gcc.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_arm_gcc.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_arm_qnx.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_atomicword_compat.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_generic_gcc.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_macosx.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_mips_gcc.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_pnacl.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_solaris.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_tsan.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_x86_gcc.h",
+        "build/native/include/google/protobuf/stubs/atomicops_internals_x86_msvc.h",
+        "build/native/include/google/protobuf/stubs/common.h",
+        "build/native/include/google/protobuf/stubs/hash.h",
+        "build/native/include/google/protobuf/stubs/map_util.h",
+        "build/native/include/google/protobuf/stubs/once.h",
+        "build/native/include/google/protobuf/stubs/platform_macros.h",
+        "build/native/include/google/protobuf/stubs/shared_ptr.h",
+        "build/native/include/google/protobuf/stubs/stl_util.h",
+        "build/native/include/google/protobuf/stubs/stringprintf.h",
+        "build/native/include/google/protobuf/stubs/strutil.h",
+        "build/native/include/google/protobuf/stubs/substitute.h",
+        "build/native/include/google/protobuf/stubs/template_util.h",
+        "build/native/include/google/protobuf/stubs/type_traits.h",
+        "build/native/include/google/protobuf/test_util.h",
+        "build/native/include/google/protobuf/test_util_lite.h",
+        "build/native/include/google/protobuf/testing/file.h",
+        "build/native/include/google/protobuf/testing/googletest.h",
+        "build/native/include/google/protobuf/text_format.h",
+        "build/native/include/google/protobuf/unknown_field_set.h",
+        "build/native/include/google/protobuf/wire_format.h",
+        "build/native/include/google/protobuf/wire_format_lite.h",
+        "build/native/include/google/protobuf/wire_format_lite_inl.h",
+        "build/native/protobuf-propertiesui-2b290923-2b50-480f-9cc0-22783e25be92.xml",
+        "build/native/protobuf.targets",
+        "build/publisher-info.txt",
+        "protobuf.2.6.1.1.nupkg.sha512",
+        "protobuf.nuspec"
+      ]
+    },
+    "protobuf-net/3.2.30": {
+      "sha512": "C/UTlmxEJHAHpqm8xQK1UyJKaIynVCSNG4mVrbLgnZ7ccH28nN49O8iMJvKEodTgVbnimvy+3mIiAdW6mATwnw==",
+      "type": "package",
+      "path": "protobuf-net/3.2.30",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/protobuf-net.dll",
+        "lib/net462/protobuf-net.xml",
+        "lib/net6.0/protobuf-net.dll",
+        "lib/net6.0/protobuf-net.xml",
+        "lib/netstandard2.0/protobuf-net.dll",
+        "lib/netstandard2.0/protobuf-net.xml",
+        "lib/netstandard2.1/protobuf-net.dll",
+        "lib/netstandard2.1/protobuf-net.xml",
+        "protobuf-net.3.2.30.nupkg.sha512",
+        "protobuf-net.nuspec",
+        "protobuf-net.png"
+      ]
+    },
+    "protobuf-net.Core/3.2.30": {
+      "sha512": "v2ZxxYrz+X212ukSx+uqkLuPu414bvmSAnTyf+PBUKR9ENJxO4P/csorA/27456MCp1JNoMssDj/f91RDiwBfQ==",
+      "type": "package",
+      "path": "protobuf-net.core/3.2.30",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/protobuf-net.Core.dll",
+        "lib/net462/protobuf-net.Core.xml",
+        "lib/net6.0/protobuf-net.Core.dll",
+        "lib/net6.0/protobuf-net.Core.xml",
+        "lib/netstandard2.0/protobuf-net.Core.dll",
+        "lib/netstandard2.0/protobuf-net.Core.xml",
+        "lib/netstandard2.1/protobuf-net.Core.dll",
+        "lib/netstandard2.1/protobuf-net.Core.xml",
+        "protobuf-net.core.3.2.30.nupkg.sha512",
+        "protobuf-net.core.nuspec",
+        "protobuf-net.png"
+      ]
+    },
+    "System.Collections.Immutable/7.0.0": {
+      "sha512": "dQPcs0U1IKnBdRDBkrCTi1FoajSTBzLcVTpjO4MBCMC7f4pDOIPzgBoX8JjG7X6uZRJ8EBxsi8+DR1JuwjnzOQ==",
+      "type": "package",
+      "path": "system.collections.immutable/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Collections.Immutable.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets",
+        "lib/net462/System.Collections.Immutable.dll",
+        "lib/net462/System.Collections.Immutable.xml",
+        "lib/net6.0/System.Collections.Immutable.dll",
+        "lib/net6.0/System.Collections.Immutable.xml",
+        "lib/net7.0/System.Collections.Immutable.dll",
+        "lib/net7.0/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "system.collections.immutable.7.0.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Google.Protobuf >= 3.26.1",
+      "protobuf >= 2.6.1.1",
+      "protobuf-net >= 3.2.30"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Max\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Max\\source\\repos\\Lab9\\Lab9.csproj",
+      "projectName": "Lab9",
+      "projectPath": "C:\\Users\\Max\\source\\repos\\Lab9\\Lab9.csproj",
+      "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Max\\source\\repos\\Lab9\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Google.Protobuf": {
+            "target": "Package",
+            "version": "[3.26.1, )"
+          },
+          "protobuf": {
+            "target": "Package",
+            "version": "[2.6.1.1, )"
+          },
+          "protobuf-net": {
+            "target": "Package",
+            "version": "[3.2.30, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
