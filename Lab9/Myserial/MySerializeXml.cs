@@ -1,39 +1,39 @@
 using System.Xml.Serialization;
 
-namespace Lab9.Myserial;
-
-internal class MySerializeXml<T>: MySerializeBase where T : class
+namespace Lab9.Myserial
 {
-    public override bool Serialize<T>(T t, string fileName)
+    internal class MySerializeXml<T> : MySerializeBase where T : class
     {
-        XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
-        using (FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate))
+        public override bool Serialize<T>(T t, string fileName) 
         {
-            try
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
+            using (FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate))
             {
-                xmlSerializer.Serialize(fs, t);
+                try
+                {
+                    xmlSerializer.Serialize(fs, t);
+                }
+                catch (Exception e)
+                {
+                    return false;
+                }
             }
-            catch (Exception e)
-            {
-                return false;
-            }
+            return true;
         }
-        return true;
-    }
 
-    public override T Deserialize<T>(string fileName)
-    {
-        XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
-        using (FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate))
+        public override T Deserialize<T>(string fileName) 
         {
-            try
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
+            using (FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate))
             {
-                T t = xmlSerializer.Deserialize(fs) as T;
-                return t;
-            }
-            catch (Exception e)
-            {
-                return null;
+                try
+                {
+                    return (T)xmlSerializer.Deserialize(fs); 
+                }
+                catch (Exception e)
+                {
+                    return default(T); 
+                }
             }
         }
     }

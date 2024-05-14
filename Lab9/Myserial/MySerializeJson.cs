@@ -31,7 +31,7 @@ internal class MySerializeJson<T>: MySerializeBase where T : class
             }
             catch (Exception e)
             {
-                return null;
+                return default(T); 
             }
         }
     }
