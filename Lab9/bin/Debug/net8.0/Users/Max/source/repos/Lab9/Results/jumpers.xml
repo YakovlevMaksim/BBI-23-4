@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfJumper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Jumper>
+    <Surname>Ivanov</Surname>
+    <Team>Russia</Team>
+    <Try1>8</Try1>
+    <Try2>9</Try2>
+    <Disqualified>false</Disqualified>
+  </Jumper>
+  <Jumper>
+    <Surname>Nakamura</Surname>
+    <Team>Japan</Team>
+    <Try1>9</Try1>
+    <Try2>9</Try2>
+    <Disqualified>false</Disqualified>
+  </Jumper>
+  <Jumper>
+    <Surname>Schmidt</Surname>
+    <Team>Germany</Team>
+    <Try1>8</Try1>
+    <Try2>8</Try2>
+    <Disqualified>false</Disqualified>
+  </Jumper>
+  <Jumper>
+    <Surname>Koskinen</Surname>
+    <Team>Finland</Team>
+    <Try1>9</Try1>
+    <Try2>8</Try2>
+    <Disqualified>false</Disqualified>
+  </Jumper>
+  <Jumper>
+    <Surname>Duplantis</Surname>
+    <Team>Sweden</Team>
+    <Try1>9</Try1>
+    <Try2>9</Try2>
+    <Disqualified>false</Disqualified>
+  </Jumper>
+</ArrayOfJumper>
